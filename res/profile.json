@@ -99,5 +99,102 @@
     {"label": "LinkedIn", "value": "linkedin.com/in/guilherme-bmachado", "url": "https://www.linkedin.com/in/guilherme-bmachado/"},
     {"label": "E-mail", "value": "devbianchi@pm.me", "url": "mailto:devbianchi@pm.me"}
   ],
-  "closing": "Estudar · Construir · Testar · Documentar"
+  "closing": "Estudar · Construir · Testar · Documentar",
+  "resume": {
+    "summary": "Estudante de Análise e Desenvolvimento de Sistemas na Fatec Indaiatuba e estagiário de TI, com foco em desenvolvimento backend com Java e Spring Boot. Desenvolvo APIs REST com persistência em bancos relacionais e, na faculdade, atuo como tech lead e desenvolvedor full stack de um sistema de agendamento para clínicas. Busco minha primeira oportunidade como desenvolvedor backend júnior ou estagiário, onde possa evoluir na stack Java escrevendo código bem estruturado.",
+    "experience": [
+      {
+        "title": "Estagiário de TI",
+        "org": "Infomatic",
+        "period": "set. 2026 — presente",
+        "bullets": [
+          "Manutenção preventiva e corretiva de computadores em laboratório e testes de nobreaks.",
+          "Atendimento de chamados de helpdesk, recebimento e organização de equipamentos e suporte técnico-administrativo em empresa de infraestrutura e cloud."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Kenko",
+        "subtitle": "Sistema de agendamento para clínicas",
+        "meta": "Projeto acadêmico (Fatec) · em desenvolvimento (MVP)",
+        "bullets": [
+          "Sistema de secretaria para clínicas médicas: o médico define sua disponibilidade por data e o paciente agenda dentro dos horários liberados.",
+          "Atuo como tech lead e desenvolvedor full stack, com foco nas funcionalidades de calendário, agenda e cadastro."
+        ],
+        "tags": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Node.js", "PostgreSQL"],
+        "links": [
+          {"label": "kenko-ui", "url": "https://github.com/devbianchi/kenko-ui"},
+          {"label": "kenko-api", "url": "https://github.com/devbianchi/kenko-api"}
+        ]
+      },
+      {
+        "name": "L9s (LeadCompass)",
+        "subtitle": "CRM com ranking de clientes",
+        "meta": "Projeto para negócio familiar · em desenvolvimento (MVP)",
+        "bullets": [
+          "CRM que ranqueia os 20 principais clientes por potencial de faturamento, com importação das tabelas de potencial enviadas pelas fábricas.",
+          "Dois níveis de acesso: o vendedor registra visitas, inspeções e faturamento real; o gestor acompanha os resultados em um dashboard.",
+          "Levantei os requisitos em entrevista com o cliente e estruturei o sistema como monólito modular."
+        ],
+        "tags": ["Next.js", "React", "Tailwind CSS", "Java 21", "Spring Boot", "PostgreSQL"],
+        "links": [
+          {"label": "l9s-ui", "url": "https://github.com/devbianchi/l9s-ui"},
+          {"label": "l9s-api", "url": "https://github.com/devbianchi/l9s-api"}
+        ]
+      },
+      {
+        "name": "Precify",
+        "subtitle": "Sistema de precificação para freelancers e pequenos negócios",
+        "meta": "",
+        "bullets": [
+          "API RESTful em Java 21 e Spring Boot, organizada em camadas (Controller, Service, Repository).",
+          "Persistência em MySQL, com modelagem das entidades e consistência dos dados.",
+          "Interface em React integrada à API para simular custos e exibir margens de lucro em tempo real."
+        ],
+        "tags": ["Java 21", "Spring Boot", "MySQL", "React", "REST API", "Git"],
+        "links": [
+          {"label": "precify-api", "url": "https://github.com/devbianchi/precify-api"},
+          {"label": "precify-web", "url": "https://github.com/devbianchi/precify-web"}
+        ]
+      },
+      {
+        "name": "Sistema de Gerenciamento de Biblioteca",
+        "subtitle": "",
+        "meta": "",
+        "bullets": [
+          "Aplicação em Java com Spring Boot para controle de acervo e fluxo de empréstimos, modelada com POO (Livro, Autor, Usuário e Empréstimo).",
+          "Persistência com Spring Data JPA, JpaRepository e Hibernate sobre PostgreSQL, com controle de estoque de exemplares e cálculo de prazos de devolução."
+        ],
+        "tags": ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "PostgreSQL"],
+        "links": [
+          {"label": "repositório", "url": "https://github.com/devbianchi/SistemaDeGerenciamentoDeBiblioteca"}
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "org": "Fatec Indaiatuba",
+        "period": "jan. 2026 — dez. 2028",
+        "note": "2º semestre"
+      }
+    ],
+    "skills": [
+      ["Linguagens e frameworks", "Java 21, Spring Boot, Spring Data JPA, Hibernate, JavaScript, TypeScript, Node.js, React, Next.js, Tailwind CSS"],
+      ["Bancos de dados", "PostgreSQL, MySQL"],
+      ["Ferramentas e testes", "Git, GitHub, Maven, Docker, JUnit 5, Linux (Arch)"],
+      ["Metodologias e gestão", "Scrumban, Jira, Notion (timeline e documentação)"],
+      ["Conceitos", "POO, APIs RESTful, arquitetura em camadas, monólito modular, JWT, Swagger/OpenAPI"]
+    ],
+    "certifications": [
+      "Infraestrutura Global da AWS (Region, AZ e VPC)",
+      "Bancos de Dados Gerenciados e Migração/DMS"
+    ],
+    "languages": [
+      ["Português", "nativo"],
+      ["Inglês", "intermediário"],
+      ["Espanhol", "básico"]
+    ]
+  }
 }

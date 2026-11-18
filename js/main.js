@@ -95,7 +95,47 @@ function render(p) {
   );
   const parts = p.closing.split("·").map((s) => s.trim());
   $("closing").replaceChildren(...parts.flatMap((w, i) => [i ? el("i", { text: "·" }) : null, el("span", { text: w, style: `color:${col(i)}` })]));
+  renderResume(p);
   $("year").textContent = String(new Date().getFullYear());
+}
+
+function entry(e, i) {
+  return el("article", { class: "entry" }, [
+    el("div", { class: "entry-head" }, [
+      el("h4", {}, [el("span", { text: e.title }), e.org ? el("span", { class: "org", text: ` — ${e.org}`, style: `color:${col(i)}` }) : null]),
+      el("span", { class: "period", text: e.period }),
+    ]),
+    e.note ? el("p", { class: "note", text: e.note }) : null,
+    e.bullets ? el("ul", { class: "bl" }, e.bullets.map((b) => el("li", { text: b }))) : null,
+  ]);
+}
+
+function renderResume(p) {
+  const r = p.resume;
+  if (!r) return;
+  $("resume-name").textContent = p.name;
+  $("resume-role").textContent = "Backend Java Developer";
+  $("resume-place").textContent = "Indaiatuba, SP";
+  $("resume-summary").textContent = r.summary;
+  $("resume-exp").replaceChildren(...r.experience.map(entry));
+  $("resume-edu").replaceChildren(...r.education.map(entry));
+
+  $("resume-projects").replaceChildren(
+    ...r.projects.map((pr, i) => {
+      const c = col(i);
+      return el("article", { class: "rproject" }, [
+        el("h4", {}, [el("span", { text: pr.name, style: `color:${c}` }), pr.subtitle ? el("span", { class: "subtitle", text: ` — ${pr.subtitle}` }) : null]),
+        pr.meta ? el("p", { class: "meta", text: pr.meta }) : null,
+        el("ul", { class: "bl" }, pr.bullets.map((b) => el("li", { text: b }))),
+        el("ul", { class: "tags" }, tagList(pr.tags, i)),
+        el("p", { class: "repos" }, pr.links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener", text: l.label, style: `color:${c}` }))),
+      ]);
+    })
+  );
+
+  $("resume-skills").replaceChildren(...r.skills.flatMap(([k, v], i) => [el("dt", { text: k, style: `color:${col(i)}` }), el("dd", { text: v })]));
+  $("resume-certs").replaceChildren(...r.certifications.map((t) => el("li", { text: t })));
+  $("resume-langs").replaceChildren(...r.languages.map(([k, v]) => el("li", {}, [el("span", { text: k }), el("span", { class: "lvl", text: v })])));
 }
 
 // ---- navegação: destaca a seção visível, menu móvel ----
