@@ -43,7 +43,6 @@ function tagList(items, offset = 0) {
 function render(p) {
   document.title = `${p.name} | Backend Java Developer`;
   $("title").textContent = `${p.handle}@${p.host}:~`;
-  $("logo").textContent = ARCH;
   $("fetch-logo").textContent = ARCH;
 
   $("name").textContent = p.name;
@@ -94,7 +93,7 @@ function render(p) {
     )
   );
   const parts = p.closing.split("·").map((s) => s.trim());
-  $("closing").replaceChildren(...parts.flatMap((w, i) => [i ? el("i", { text: "·" }) : null, el("span", { text: w, style: `color:${col(i)}` })]));
+  $("closing").replaceChildren(...parts.flatMap((w, i) => [i ? el("i", { text: "·" }) : null, el("span", { text: w, style: `color:${col(i)}` })]).filter(Boolean));
   renderResume(p);
   $("year").textContent = String(new Date().getFullYear());
 }
@@ -154,7 +153,7 @@ function nav() {
   secs.forEach((s) => io.observe(s));
 
   const btn = $("menu-btn");
-  const side = document.querySelector(".sidebar");
+  const side = $("nav");
   const close = () => { side.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); };
   btn.addEventListener("click", () => {
     const open = side.classList.toggle("open");
