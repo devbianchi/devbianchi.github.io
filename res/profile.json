@@ -1,0 +1,103 @@
+{
+  "name": "Guilherme Bianchi Machado",
+  "handle": "devbianchi",
+  "host": "indaiatuba",
+  "role": "Backend Java Developer em formação, construindo uma base sólida em Java e Spring rumo a uma carreira no Japão.",
+  "facts": ["Java 21+", "Spring Boot 3+", "Estagiário de TI, Infomatic", "ADS, Fatec"],
+  "fetch": [
+    ["OS", "Arch Linux x86_64"],
+    ["Host", "Indaiatuba, SP, Brasil"],
+    ["Role", "Backend Java Developer"],
+    ["Estudo", "ADS, Fatec Indaiatuba"],
+    ["Trabalho", "Estagiário de TI, Infomatic"],
+    ["Foco", "Backend, Java e Spring"],
+    ["Stack", "Java 21+, Spring Boot 3+"],
+    ["Dados", "PostgreSQL, MySQL, JPA"],
+    ["Testes", "JUnit 5, Mockito, Testcontainers"],
+    ["DevOps", "Docker, GitHub Actions, Maven"],
+    ["Cloud", "AWS (Skill Builder)"],
+    ["Idiomas", "Japonês (meta N2), Inglês"],
+    ["Objetivo", "Dev backend no Japão"]
+  ],
+  "about": [
+    "Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Indaiatuba. Trabalho como estagiário de TI na Infomatic, na área de infraestrutura e cloud, e estudo backend com Java e Spring todos os dias.",
+    "Aprendo construindo. Cada projeto tem um objetivo claro, testes e um README que explica o que funciona, o que falta e o que eu faria diferente."
+  ],
+  "projects": [
+    {
+      "name": "L9s (LeadCompass)",
+      "status": "Privado",
+      "url": null,
+      "description": "Gestão comercial com ranking de clientes por potencial, dashboards para gestores e uma área para vendedores.",
+      "bullets": [
+        "Backend em Java 21 com Spring Boot e PostgreSQL",
+        "Frontend em Next.js, em monólito modular",
+        "MVP em desenvolvimento, projeto solo com apoio de IA"
+      ],
+      "tags": ["Java 21", "Spring Boot", "PostgreSQL", "Next.js"]
+    },
+    {
+      "name": "Kenko",
+      "status": "Faculdade",
+      "url": "https://github.com/devbianchi/kenko-api",
+      "description": "Agenda para clínicas: o médico define a disponibilidade e o paciente agenda dentro dela.",
+      "bullets": [
+        "Projeto da faculdade, em fase de MVP",
+        "Atuo como tech lead do time",
+        "Calendário, agenda e cadastro"
+      ],
+      "tags": ["Next.js", "TypeScript", "Node.js", "PostgreSQL"]
+    },
+    {
+      "name": "Library Management System",
+      "status": "Público",
+      "url": "https://github.com/devbianchi/SistemaDeGerenciamentoDeBiblioteca",
+      "description": "Sistema de biblioteca que começou em Java puro e hoje usa Spring Boot, JPA e PostgreSQL.",
+      "bullets": [
+        "Modelagem de domínio e exceções customizadas",
+        "Dockerfile e docker-compose com PostgreSQL",
+        "Versão com Docker implantada numa EC2 da AWS"
+      ],
+      "tags": ["Java", "Spring Boot", "JPA", "Docker", "AWS"]
+    },
+    {
+      "name": "Precify API",
+      "status": "Público",
+      "url": "https://github.com/devbianchi/precify-api",
+      "description": "API REST para monitorar preços de concorrentes, com cadastro de produtos, coleta de preços e histórico.",
+      "bullets": [
+        "Java 21 e Spring Boot, com JWT e Swagger/OpenAPI",
+        "Feito com apoio de IA",
+        "Em evolução: testes com JUnit e deploy"
+      ],
+      "tags": ["Java 21", "Spring Boot", "JWT", "PostgreSQL"]
+    }
+  ],
+  "focus": [
+    ["Backend", "Java 21+, Spring Boot 3+, Spring Data JPA, REST com JWT"],
+    ["Dados", "PostgreSQL, MySQL"],
+    ["Testes", "JUnit 5, Mockito, Testcontainers"],
+    ["DevOps", "Docker, GitHub Actions, Maven"],
+    ["Cloud", "Fundamentos de AWS, EC2, bancos gerenciados"],
+    ["Idiomas", "Japonês (meta N2), inglês, espanhol básico"],
+    ["Ferramentas", "Git, Arch Linux"]
+  ],
+  "how": [
+    ["Código que se explica.", "Nomes claros, camadas bem separadas e um README com setup, limites e decisões."],
+    ["Testes antes de confiar.", "JUnit, Mockito e Testcontainers. Essa parte ainda está em evolução e é uma prioridade."],
+    ["Registrar o caminho.", "Anoto decisões e erros, não só o que funcionou."],
+    ["IA com critério.", "Uso IA como apoio, mas preciso conseguir explicar cada decisão do código."]
+  ],
+  "priorities": [
+    "Japonês todos os dias, rumo ao N2.",
+    "Ganhar experiência como dev, no time de software da Infomatic ou numa vaga júnior de backend.",
+    "Levar o MVP do L9s até o fim e publicar o Precify API com testes e deploy.",
+    "Concluir a certificação AWS Cloud Practitioner."
+  ],
+  "links": [
+    {"label": "GitHub", "value": "github.com/devbianchi", "url": "https://github.com/devbianchi"},
+    {"label": "LinkedIn", "value": "linkedin.com/in/guilherme-bmachado", "url": "https://www.linkedin.com/in/guilherme-bmachado/"},
+    {"label": "E-mail", "value": "devbianchi@pm.me", "url": "mailto:devbianchi@pm.me"}
+  ],
+  "closing": "Estudar · Construir · Testar · Documentar"
+}

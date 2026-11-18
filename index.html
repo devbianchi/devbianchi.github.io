@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guilherme Bianchi Machado | Backend Java Developer</title>
+  <meta name="description" content="Guilherme Bianchi Machado, desenvolvedor backend Java e Spring em formação. Projetos, stack e contato." />
+  <meta property="og:title" content="Guilherme Bianchi Machado | Backend Java Developer" />
+  <meta property="og:description" content="Desenvolvedor backend Java e Spring em formação, rumo a uma carreira no Japão." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1d2326" />
+  <link rel="preload" href="fonts/Fraunces-400.woff" as="font" type="font/woff" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+  <div id="boot" aria-hidden="true">
+    <pre id="boot-log"></pre>
+    <p class="boot-hint">pressione qualquer tecla para pular</p>
+  </div>
+
+  <div class="window">
+    <div class="titlebar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="title" id="title">devbianchi@indaiatuba:~</span>
+      <button id="menu-btn" class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">menu</button>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <pre class="logo" aria-hidden="true" id="logo"></pre>
+        <nav id="nav" class="nav" aria-label="Seções">
+          <a href="#sobre" data-sec="sobre"><span>01</span>sobre</a>
+          <a href="#projetos" data-sec="projetos"><span>02</span>projetos</a>
+          <a href="#stack" data-sec="stack"><span>03</span>stack</a>
+          <a href="#metodo" data-sec="metodo"><span>04</span>método</a>
+          <a href="#contato" data-sec="contato"><span>05</span>contato</a>
+        </nav>
+        <p class="status"><i></i>Indaiatuba, SP · UTC-3</p>
+      </aside>
+
+      <main id="conteudo">
+        <section id="sobre" class="sec">
+          <header class="sec-head"><span class="n">01</span><span class="t">sobre</span><hr /></header>
+          <h1 id="name"></h1>
+          <p id="role" class="role"></p>
+          <ul id="facts" class="tags"></ul>
+          <div class="fetch" aria-label="Resumo no estilo fastfetch">
+            <pre id="fetch-logo" class="fetch-logo" aria-hidden="true"></pre>
+            <dl id="fetch-rows" class="fetch-rows"></dl>
+          </div>
+          <div id="about" class="prose"></div>
+        </section>
+
+        <section id="projetos" class="sec">
+          <header class="sec-head"><span class="n">02</span><span class="t">projetos</span><hr /></header>
+          <div id="projects" class="projects"></div>
+        </section>
+
+        <section id="stack" class="sec">
+          <header class="sec-head"><span class="n">03</span><span class="t">stack</span><hr /></header>
+          <dl id="focus" class="rows"></dl>
+        </section>
+
+        <section id="metodo" class="sec">
+          <header class="sec-head"><span class="n">04</span><span class="t">método e prioridades</span><hr /></header>
+          <dl id="how" class="rows"></dl>
+          <h2 class="sub">Prioridades</h2>
+          <ol id="priorities" class="prio"></ol>
+        </section>
+
+        <section id="contato" class="sec">
+          <header class="sec-head"><span class="n">05</span><span class="t">contato</span><hr /></header>
+          <ul id="links" class="links"></ul>
+          <p id="closing" class="closing"></p>
+        </section>
+
+        <footer class="foot">
+          <span>guilherme@devbianchi · Indaiatuba, SP</span>
+          <span id="year"></span>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <noscript><p class="noscript">Este site precisa de JavaScript para carregar o conteúdo. O perfil também está em github.com/devbianchi.</p></noscript>
+</body>
+</html>
