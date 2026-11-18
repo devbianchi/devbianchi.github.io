@@ -21,18 +21,39 @@
     <p class="boot-hint">pressione qualquer tecla para pular</p>
   </div>
 
+  <aside class="sidebar" id="side">
+    <div class="side-title">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="title" id="title">devbianchi@indaiatuba:~</span>
+    </div>
+    <div class="side-body">
+      <pre class="logo" aria-hidden="true" id="logo"></pre>
+      <p class="prompt">$ whoami</p>
+      <p class="side-name" id="side-name">Guilherme Bianchi Machado</p>
+      <p class="prompt">$ ./focus</p>
+      <p class="side-text">backend com Java e Spring, rumo a uma carreira no Japão.</p>
+      <p class="prompt">$ ls pages/</p>
+      <nav id="nav" class="nav" aria-label="Seções">
+        <a href="#sobre" data-sec="sobre"><span>01</span>sobre</a>
+        <a href="#projetos" data-sec="projetos"><span>02</span>projetos</a>
+        <a href="#stack" data-sec="stack"><span>03</span>stack</a>
+        <a href="#metodo" data-sec="metodo"><span>04</span>método</a>
+        <a href="#contato" data-sec="contato"><span>05</span>contato</a>
+        <a href="#curriculo" data-sec="curriculo"><span>06</span>currículo</a>
+      </nav>
+    </div>
+    <div class="side-foot">
+      <a class="btn" href="#curriculo">↓ currículo</a>
+      <p class="prompt">// connect</p>
+      <ul id="side-links" class="side-links"></ul>
+      <p class="status"><i></i>Indaiatuba, SP · UTC-3</p>
+    </div>
+  </aside>
+
   <header class="topbar">
     <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-    <span class="title" id="title">devbianchi@indaiatuba:~</span>
-    <nav id="nav" class="nav" aria-label="Seções">
-      <a href="#sobre" data-sec="sobre"><span>01</span>sobre</a>
-      <a href="#projetos" data-sec="projetos"><span>02</span>projetos</a>
-      <a href="#stack" data-sec="stack"><span>03</span>stack</a>
-      <a href="#metodo" data-sec="metodo"><span>04</span>método</a>
-      <a href="#contato" data-sec="contato"><span>05</span>contato</a>
-      <a href="#curriculo" data-sec="curriculo"><span>06</span>currículo</a>
-    </nav>
-    <button id="menu-btn" class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">menu</button>
+    <span class="title">devbianchi@indaiatuba:~</span>
+    <button id="menu-btn" class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="side">menu</button>
   </header>
 
   <main id="conteudo">

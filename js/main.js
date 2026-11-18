@@ -43,7 +43,10 @@ function tagList(items, offset = 0) {
 function render(p) {
   document.title = `${p.name} | Backend Java Developer`;
   $("title").textContent = `${p.handle}@${p.host}:~`;
+  $("logo").textContent = ARCH;
   $("fetch-logo").textContent = ARCH;
+  $("side-name").textContent = p.name;
+  $("side-links").replaceChildren(...p.links.map((l) => el("li", {}, [el("a", { href: l.url, text: l.label, ...(l.url.startsWith("http") ? { target: "_blank", rel: "noopener" } : {}) })])));
 
   $("name").textContent = p.name;
   $("role").textContent = p.role;
@@ -153,7 +156,7 @@ function nav() {
   secs.forEach((s) => io.observe(s));
 
   const btn = $("menu-btn");
-  const side = $("nav");
+  const side = $("side");
   const close = () => { side.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); };
   btn.addEventListener("click", () => {
     const open = side.classList.toggle("open");
